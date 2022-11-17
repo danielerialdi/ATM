@@ -1,3 +1,7 @@
+package Business_logic;
+import Database.BankDatabase;
+import GUI.Screen;
+
 // BalanceInquiry.java
 // Represents a balance inquiry ATM transaction
 
