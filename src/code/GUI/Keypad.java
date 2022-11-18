@@ -3,6 +3,7 @@ package GUI;
 // Represents the keypad of the ATM
 import java.util.Scanner; // program uses Scanner to obtain user input
 
+
 public class Keypad
 {
    private Scanner input; // reads data from the command line
