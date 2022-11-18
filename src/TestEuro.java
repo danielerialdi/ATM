@@ -4,6 +4,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+import Business_logic.Euro;
+
 public class TestEuro {
     // Creating 3 Euro objects
     Euro euro0, euro1, euro2;
