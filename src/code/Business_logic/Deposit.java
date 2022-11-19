@@ -11,7 +11,7 @@ public class Deposit extends Transaction
    private Euro amount; // amount to deposit
    private Keypad keypad; // reference to keypad
    private DepositSlot depositSlot; // reference to deposit slot
-   private final static Euro CANCELED = new Euro(0); // constant for cancel option ; change type to Euro
+   private final static Euro CANCELED = new Euro(0); // constant for cancel option  ; changed type to Euro
 
    // Deposit constructor
    public Deposit( int userAccountNumber, Screen atmScreen, 
@@ -80,11 +80,11 @@ public class Deposit extends Transaction
       int input = keypad.getInput(); // receive input of deposit amount
       
       // check whether the user canceled or entered a valid amount
-      if ( input == CANCELED.getValore() )               //use .getvalore because input is a int
+      if ( input == CANCELED.getValore() )               //used .getvalore because input is an int
          return CANCELED;
       else
       {
-         return new Euro(input/100.0); // put /100 because retunr euro in CENTS!!
+         return new Euro(input/100.0);           // put /100.0  because return euro in CENTS!!
       } // end else
    } // end method promptForDepositAmount
 } // end class Deposit

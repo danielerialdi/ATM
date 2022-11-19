@@ -52,7 +52,7 @@ public class BankDatabase
    } // end method getAvailableBalance
 
    // return total balance of Account with specified account number
-   public Euro getTotalBalance( int userAccountNumber )                 //change double to Euro
+   public Euro getTotalBalance( int userAccountNumber )                 //changed double to Euro
    {
       return getAccount( userAccountNumber ).getTotalBalance();
    } // end method getTotalBalance

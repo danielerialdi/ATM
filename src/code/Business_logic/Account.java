@@ -6,8 +6,8 @@ public class Account
 {
    private int accountNumber; // account number
    private int pin; // PIN for authentication
-   private Euro availableBalance; // funds available for withdrawal   ; change Double in "Euro"
-   private Euro totalBalance; // funds available + pending deposits   ; change double in Euro
+   private Euro availableBalance; // funds available for withdrawal   ; changed Double in "Euro"
+   private Euro totalBalance; // funds available + pending deposits   ; changed double in "Euro"
 
    // Account constructor initializes attributes
    public Account( int theAccountNumber, int thePIN, 
@@ -29,13 +29,13 @@ public class Account
    } // end method validatePIN
    
    // returns available balance
-   public Euro getAvailableBalance()               //change double in Euro
+   public Euro getAvailableBalance()               //changed double in Euro
    {
       return availableBalance;
    } // end getAvailableBalance
 
    // returns the total balance
-   public Euro getTotalBalance()                   //change double in Euro
+   public Euro getTotalBalance()                   //changed double in Euro
    {
       return totalBalance;
    } // end method getTotalBalance
