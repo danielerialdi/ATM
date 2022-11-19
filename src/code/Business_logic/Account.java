@@ -6,12 +6,12 @@ public class Account
 {
    private int accountNumber; // account number
    private int pin; // PIN for authentication
-   private Euro availableBalance; // funds available for withdrawal
-   private Euro totalBalance; // funds available + pending deposits
+   private Euro availableBalance; // funds available for withdrawal   ; change Double in "Euro"
+   private Euro totalBalance; // funds available + pending deposits   ; change double in Euro
 
    // Account constructor initializes attributes
    public Account( int theAccountNumber, int thePIN, 
-      Euro theAvailableBalance, Euro theTotalBalance )
+      Euro theAvailableBalance, Euro theTotalBalance )               //Account(int,int,Euro,Euro)
    {
       accountNumber = theAccountNumber;
       pin = thePIN;
@@ -29,25 +29,25 @@ public class Account
    } // end method validatePIN
    
    // returns available balance
-   public Euro getAvailableBalance()
+   public Euro getAvailableBalance()               //change double in Euro
    {
       return availableBalance;
    } // end getAvailableBalance
 
    // returns the total balance
-   public Euro getTotalBalance()
+   public Euro getTotalBalance()                   //change double in Euro
    {
       return totalBalance;
    } // end method getTotalBalance
 
    // credits an amount to the account
-   public void credit( Euro amount )
+   public void credit( Euro amount )               //method credit(Euro)
    {
-      totalBalance.somma(amount); // add to total balance
+      totalBalance.somma(amount); // add to total balance    ;  use function .somma() from class Euro
    } // end method credit
 
    // debits an amount from the account
-   public void debit( Euro amount )
+   public void debit( Euro amount )          //method debit(Euro)
    {
       availableBalance.sottrai(amount); // subtract from available balance
       totalBalance.sottrai(amount); // subtract from total balance
