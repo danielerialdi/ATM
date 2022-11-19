@@ -46,7 +46,7 @@ public class BankDatabase
    } // end method authenticateUser
 
    // return available balance of Account with specified account number
-   public Euro getAvailableBalance( int userAccountNumber )
+   public Euro getAvailableBalance( int userAccountNumber )                //public Euro ...
    {
       return getAccount( userAccountNumber ).getAvailableBalance();
    } // end method getAvailableBalance
