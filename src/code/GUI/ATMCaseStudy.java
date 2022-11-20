@@ -1,4 +1,4 @@
-package Business_logic;
+package GUI;
 // ATMCaseStudy.java
 // Driver program for the ATM case study
 
